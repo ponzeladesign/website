@@ -1,0 +1,17 @@
+<div class="container-fluid bg-black mt-5">
+  <div class="row">
+    <div class="col-4 text-center mt-4">
+        <a href="#"><img style="all: unset" class="logo" src="{{ .Site.BaseURL }}{{ with .Site.Params.Logo }}{{ . | relURL }}{{ end }}" alt="Logo"></a>
+    </div>
+    <div class="col-4 text-center mt-sm-5">
+        <h1 class="text-light">{{ .Site.Title }}</h1>
+        <p>{{ .Site.Params.Description }}</p>
+    </div>
+    <div class="col-4 text-center social-links mt-lg-5 mt-sm-0">
+           {{ $socials := .Site.Params.socials }}
+           {{ range $el := $socials }}
+      <a href="{{ $el.url }}"><i class="{{ $el.icon }} mt-lg-5 text-light mx-3"></i></a>
+           {{ end }}
+    </div>
+  </div>
+</div>

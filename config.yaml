@@ -1,49 +1,32 @@
-baseURL: https://ponzeladesign.com
-title: Ponzela Design
+baseURL: 'ponzeladesign.com'
+title: 'Ponzela Design'
 defaultContentLanguage: 'en'
-theme: eternity
-googleAnalytics: '' # todo: set your analytics id.
+
+permalinks:
+  posts: "/:sections/:title"
 
 params:
-  image: /images/banner.png
+  banner: banner.jpg
   logo: logo.png
-  subtitle: Eternity is a minimalist Hugo theme designed for portfolio sites with a fresh feel. # todo: change default subtitle for your website.
-  copyright: All rights reserved. # todo: set your copyright type.
-  author: Lovely Author # todo: set your full name.
-  dontShowSource: false # please, do not do this :)
-  portfolio:
-    columns:
-      desktop:
-        nature: 4
-        archive: 6
-        people: 2
-        default: 3
-      mobile:
-        default: 2
-        archive: 3
-        people: 1
+  description: 'Designing your vision into reality'
+  copyright: 'Ponzela Design'
   socials:
-    # todo: change these links.
-    - icon: 'far fa-envelope fa-lg'
-      url: 'mailto:eternity@bora.sh'
-      landing: true
-    - icon: 'fab fa-github fa-lg'
-      url: 'https://github.com/boratanrikulu/eternity'
-      landing: true
+
     - icon: 'fab fa-instagram fa-lg'
-      url: 'https://instagram.bora.sh/eternity'
+      url: 'https://www.instagram.com/mariaponzela/'
+
+    - icon: 'fab fa-behance fa-lg'
+      url: 'https://www.behance.net/mariamoreno17'
+
     - icon: 'fab fa-linkedin-in fa-lg'
-      url: 'https://linkedin.bora.sh/in/eternity'
-  homepage: "/work" # homepage link, mostly same with menu.main[0]
-  specialPages:
-    - work
-    - archive
-  bypassWelcomePage: false # redirects "/" to "homepage" when it's true.
-  disableWelcomePageBackground: false # disables the background image on the homepage
-  plausible: '' # todo: set your plausible id.
-  disableRadius: false
-  moveIt: false  # Moves Title and Meta info down, only visible when scroll.
-  disableAlwaysResize: false
+      url: 'https://www.linkedin.com/in/mariaponzela/'
+
+    - icon: 'fab fa-github fa-lg'
+      url: 'https://github.com/ponzeladesign'
+
+    - icon: 'far fa-envelope fa-lg'
+      url: 'mailto:contact@ponzeladesign.com'
+
 
 markup:
   defaultMarkdownHandler: goldmark
@@ -51,26 +34,17 @@ markup:
     renderer:
       unsafe: true
 
-taxonomies:
-  tag: tags
-
-permalinks:
-  work: ":filename/"
-
 menu:
   main:
-    - name: work
-      url: /work/
+    - name: 'Projects'
+      url: /projects/
       weight: 1
-    - name: people
-      url: /tags/people/
+    - name: 'Blog'
+      url: /blog/
       weight: 2
-    - name: nature
-      url: /tags/nature/
+    - name: 'Contact'
+      url: /contact/
       weight: 3
-    - name: archive
-      url: /tags/archive/
-      weight: 4
-    - name: about
+    - name: 'About'
       url: /about/
-      weight: 5
+      weight: 4
