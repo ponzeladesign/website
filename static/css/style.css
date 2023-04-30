@@ -10,7 +10,8 @@ body {
 }
 
 .nav-link.active {
-    border-bottom: 2px solid white;
+    font-weight: bold;
+    border-bottom: 2px solid #ffb71b;
 }
 
 /* For screens smaller than 576px (mobile phones) */

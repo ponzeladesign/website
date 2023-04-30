@@ -10,7 +10,7 @@
   <div class="row">
 
     <ul id="postslist">
-    {{ range ( ( where .Site.RegularPages "Section" "posts" ).ByDate.Reverse ) }}
+    {{ range ( ( where .Site.RegularPages "Section" "projects" ).ByDate.Reverse ) }}
       <li>
           {{ .Date.Format "2006-01-02" }} - <a href="{{ .Permalink }}">{{.Title }}</a>
       </li>
