@@ -1,0 +1,61 @@
+name: Publish website
+
+on:
+  push:
+    branches:
+      - main  # Set a branch to deploy
+  schedule:
+          # ┌───────────── minute (0 - 59)
+          # │ ┌───────────── hour (0 - 23)
+          # │ │ ┌───────────── day of the month (1 - 31)
+          # │ │ │ ┌───────────── month (1 - 12 or JAN-DEC)
+          # │ │ │ │ ┌───────────── day of the week (0 - 6 or SUN-SAT)
+          # │ │ │ │ │
+          # │ │ │ │ │
+          # │ │ │ │ │
+          # * * * * *
+    - cron: 0 0 * * *
+  workflow_dispatch:
+  workflow_call:
+
+env:
+  MAIN_HUGO_VERSION: '0.110.0'
+  CNAME: 'ponzeladesign.com'
+  PUBLISH_BRANCH: 'gh-pages'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+
+  publish:
+    name: "Publish website"
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: "Clone project"
+        uses: actions/checkout@v3
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: "Install hugo"
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: ${{ env.MAIN_HUGO_VERSION }}
+
+      - name: "Render website"
+        run: |
+          hugo --minify
+
+      - name: "Publish website in GitHub pages"
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          commit_message: ${{ github.event.head_commit.message }}
+          cname: ${{ env.CNAME }}
+          force_orphan: true
+          publish_branch: ${{ env.PUBLISH_BRANCH }}
