@@ -9,9 +9,29 @@ body {
   margin: auto;
 }
 
+h2 {
+    margin-top: 4rem;
+}
+
+#main {
+    max-width: 800px;
+}
+
 .nav-link.active {
     font-weight: bold;
     border-bottom: 2px solid #ffb71b;
+}
+
+#card {
+    color: white;
+    background-color: black;
+    border: thin solid white;
+    box-shadow: 0 0 4px 4px #777;
+    transition: transform 0.3s ease;
+}
+
+#card:hover {
+  transform: scale(1.1);
 }
 
 /* For screens smaller than 576px (mobile phones) */
@@ -39,9 +59,4 @@ img {
   img {
     max-width: 100%;
   }
-}
-
-.card.bg-black:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
 }

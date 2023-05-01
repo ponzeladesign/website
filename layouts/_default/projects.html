@@ -1,23 +1,26 @@
 {{ define "main" }}
 <div class="container mt-5">
 
-<span class="h2 mb-4">{{ .Title }}</span>
+  <span class="h2 mb-4">{{ .Title }}</span>
 
-{{ .Content }}
+  {{ .Content }}
+
   <div class="row mt-5">
     {{ range ( ( where .Site.RegularPages "Section" "projects" ).ByDate.Reverse ) }}
       <div class="col-md-4 mb-4">
-        <div class="card bg-dark border-light shadow">
+        <!-- TODO: forcing an id because the CSS does not seem to work -->
+        <div id="card" class="card">
           <img src="{{ .Permalink }}{{ .Params.Image }}" class="card-img-top" alt="{{ .Title }}">
           <div class="card-body">
             <h5 class="card-title">{{ .Title }}</h5>
-            <p class="card-text text-light">{{ .Summary }}</p>
+            <p class="card-text text-black">{{ .Summary }}</p>
             <a href="{{ .Permalink }}" class="btn btn-light">Read more</a>
           </div>
         </div>
       </div>
     {{ end }}
   </div>
+
 </div>
 
 {{ end }}

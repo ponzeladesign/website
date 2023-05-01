@@ -6,10 +6,10 @@ permalinks:
   posts: "/:sections/:title"
 
 params:
-  logo: 'logo.png'
+  author: 'Ponzela Design'
   avatar: 'me.png'
   description: 'Designing your vision into reality'
-  copyright: 'Ponzela Design'
+  logo: 'logo.png'
   socials:
 
     - icon: 'fab fa-instagram fa-lg'
@@ -27,13 +27,6 @@ params:
     - icon: 'far fa-envelope fa-lg'
       url: 'mailto:contact@ponzeladesign.com'
 
-
-markup:
-  defaultMarkdownHandler: goldmark
-  goldmark:
-    renderer:
-      unsafe: true
-
 menu:
   main:
     - name: 'Projects'
@@ -45,3 +38,9 @@ menu:
     - name: 'About'
       url: /about/
       weight: 3
+
+markup:
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    renderer:
+      unsafe: true
