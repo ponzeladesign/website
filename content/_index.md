@@ -1,1 +1,1 @@
-![Collage](background.jpeg)
+![Collage](background.jpg)

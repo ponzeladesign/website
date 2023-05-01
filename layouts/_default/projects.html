@@ -7,7 +7,7 @@
   <div class="row mt-5">
     {{ range ( ( where .Site.RegularPages "Section" "projects" ).ByDate.Reverse ) }}
       <div class="col-md-4 mb-4">
-        <div class="card bg-dark">
+        <div class="card bg-dark border-light shadow">
           <img src="{{ .Permalink }}{{ .Params.Image }}" class="card-img-top" alt="{{ .Title }}">
           <div class="card-body">
             <h5 class="card-title">{{ .Title }}</h5>
@@ -19,6 +19,5 @@
     {{ end }}
   </div>
 </div>
-
 
 {{ end }}
