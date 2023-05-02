@@ -1,15 +1,9 @@
 {{ define "main" }}
 <div id="post" class="container mt-5">
-  {{ if eq .Section "posts" }}
+  {{ if eq .Section "projects" }}
   <hr>
   <div class="row">
         <span id="title" class="h1">{{ .Title }}</span>
-  </div>
-  <div class="row">
-        <span id="author">{{ .Params.author }}</span>
-  </div>
-  <div class="row">
-        <span id="date">{{ .Date.Format "January 2, 2006" }}</span>
   </div>
   <hr>
   {{ end }}
