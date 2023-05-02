@@ -14,7 +14,7 @@ h2 {
 }
 
 #main {
-    max-width: 900px;
+    max-width: 800px;
 }
 
 .nav-link.active {
@@ -77,44 +77,4 @@ img {
    max-height: 480px;
    margin-bottom: 3rem;
    margin-top: 3rem;
-}
-
-.workflow-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.step {
-  width: 80%;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  text-align: center;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-  margin-right: 10px;
-}
-
-.step h1 {
-  font-size: 50px;
-  margin-top: 20px;
-}
-
-.step h2 {
-  font-size: 24px;
-  margin-bottom: 30px;
-  margin-top: 10px;
-}
-
-.step p {
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 30px;
-}
-
-.guidelines {
-  margin-bottom: 40px;
-  margin-top: -20px;
 }

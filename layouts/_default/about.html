@@ -1,14 +1,11 @@
 {{ define "main" }}
 <div id="main" class="container mt-5">
 
-<span class="h2 mb-4">{{ .Title }}</span>
+  <div class="text-center mb-5">
+      <img src="{{ .Site.BaseURL }}{{ with .Site.Params.Avatar }}{{ . | relURL }}{{ end }}" class="mx-auto" alt="Avatar" style="max-width: 256px;">
+  </div>
 
-    <div class="text-center mb-5">
-      <img src="{{ .Site.BaseURL }}{{ with .Site.Params.Avatar }}{{ . | relURL
-      }}{{ end }}"  class="mx-auto" alt="Avatar" style="max-width: 256px;">
-    </div>
-
-{{ .Content }}
+  {{ .Content }}
 
 </div>
 
