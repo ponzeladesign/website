@@ -25,9 +25,26 @@
 4. Seleccionar los archivos deseados (icono +), nombrar el cambio y registrarlo.
 
 
-## Subir cambios a GitHub
+## Subir cambios a GitHub y abrir pull request
 
 1. Escribir en la terminal ``git push``
+
+2. Ir a la pestaña ``pull request`` en GitHub: https://github.com/ponzeladesign/website/pulls
+
+3. Abrir pull request, poner título, descripción y dar a ``create pull request``
+
+4. Una vez creado dar al boton verde ``merge pull request`` y verás un botón de ``confirm merge``
+
+5. Ir a la pestaña ``actions`` y comprobar que se ha cargado todo.
+
+6. Refrescar la rama ``post/generic`` y moverte a ``main`` para comprobar que se han añadido los cambios a la rama en el ``Git Graph``. Refrescar la rama ``main``.
+
+## Abrir web en incognito
+
+
+
+
+
 
 
 
