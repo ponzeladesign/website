@@ -3,12 +3,12 @@ title: Sitaid
 date: 2023-04-30
 author: Maria Ponzela
 image: 'img/thumbnail.jpg'
-summary: "This project aims to find and adapt a mechanism, specifically an expandable pulley, that amplifies the coverage of the headphones, thereby enabling more effective sound control."
+summary: "The project involves creating an identity for a product designed to enhance the independence of individuals with motor disabilities by aiding them in getting in and out of vehicles easily."
 ---
 
 ![](img/thumbnail.jpg)
 
-​With this work I intend to provide a new way of listening to music, of being able to choose and decide how to listen to it. This project is not only aesthetic, but also mechanical. It seeks to adapt to the needs of the consumer, more specifically their hearing. 
+Sitaid is the identity designed for a product aimed at enhancing the autonomy of individuals with motor disabilities. A product that will assist them in getting in and out of the car without the need for strength or abrupt movements. Therefore, Sitaid needed to be a highly descriptive brand, with a fluid symbol capable of providing uniqueness, differentiation, and strength to the brand.
 
 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
