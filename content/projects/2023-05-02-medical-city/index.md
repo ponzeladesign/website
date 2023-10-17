@@ -3,12 +3,12 @@ title: Medical city
 date: 2023-04-30
 author: Maria Ponzela
 image: 'img/thumbnail.png'
-summary: "For this project we analyzed various board and card games to create a playful design. Drawing inspiration from classical Greece we ensured that the game was as dynamic and aesthetically pleasing as possible."
+summary: "This project aims to create an emblem for the new healthcare city in Jaén, which fosters provincial unity and instills pride among healthcare professionals while providing reassurance to patients."
 ---
 
 ![](img/thumbnail.png)
 
-In an ambitious attempt to create something different, we decided to build a game from scratch. Épizon is an intense game, where you have to be constantly alert, not only controlling the cards you have, but also observing the movements of your opponents and the rolls of the dice.
+As someone with familial ties to the healthcare sector, I was given the opportunity to participate in the competition to create a distinctive and representative image for the new healthcare complex in Jaén. This design not only pays homage to the colors of its land and its people but also symbolizes the bridge that connects the province's hospitals.
 
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
